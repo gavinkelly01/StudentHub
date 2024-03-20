@@ -65,11 +65,12 @@ body {
   background-color: #f0f8ff;
   color: #333;
   margin: 0;
+  padding: 0;
   line-height: 1.6;
 }
 
 p {
-  padding-left: 400px;
+  padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 20px;
 }
@@ -151,6 +152,7 @@ p {
 .banner {
   background-color: lightslategray;
   text-align: center;
+  width: 100%;
 }
 
 .navbar {
@@ -167,8 +169,6 @@ p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-
 
 .logo {
   width: 150px;

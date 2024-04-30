@@ -62,21 +62,42 @@ hr {
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
+  background-color: #ffffff;
+  color: #000000;
   margin: 0;
+  font-size: 20px;
+  padding: 0;
   line-height: 1.6;
 }
+h1, h2, h3, h4{
+  width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
 
 p {
-  padding-left: 400px;
-  padding-right: 20px;
-  margin-bottom: 20px;
+width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
 }
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
 
 #top-header {
   background-color: #fff;
-  color: #333;
+  color: #d7c8c8;
   padding-left: 400px;
   padding-right: 400px;
   padding-top: 10px;
@@ -149,8 +170,14 @@ p {
 }
 
 .banner {
-  background-color: lightslategray;
+  background-color: #71ccdc;
   text-align: center;
+  width: 100%;
+}
+
+.college-image{
+  width: 150px;
+  margin: 0 0 0 15px;
 }
 
 .navbar {
@@ -158,8 +185,8 @@ p {
   padding-left: 400px;
   padding-right: 400px;
   box-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #333;
-  color: #fff;
+  background-color: #4fa5f5;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,8 +194,6 @@ p {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
-
 
 .logo {
   width: 150px;
@@ -263,6 +288,40 @@ button span {
   transition: 0.5s;
 }
 
+
+.searchbar {
+  width: 75%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .navbar {
@@ -281,50 +340,14 @@ button span {
 }
 
 
-.sidebar {
-  flex: 0 0 auto;
-  float: right;
-  border-left: 2px black;
-  width: 25%;
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-    .search {
-      margin-bottom: 20px;
-
-    }
-
-.search input[type="text"] {
-  width: calc(100% - 80px);
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.search button {
-  margin-top: 10px;
-  background-color: #4682b4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-    .search button:hover {
-      background-color: #6a5acd;
-    }
-
     /* Footer */
 
     footer {
-      position: relative;
       bottom: 0;
       width: 100%;
       background-color: #4682b4;
       color: #fff;
       text-align: center;
-      padding: 10px;
     }
 
 

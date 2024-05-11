@@ -1,22 +1,9 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 /* Base styles */
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
   overflow-y: scroll; /* Show vertical scrollbar */
 }
 
@@ -57,8 +44,6 @@ hr {
   clear: both;
 }
 
-
-
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
@@ -69,41 +54,30 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-h1, h2, h3, h4{
-  width: 50%;
-  margin: 0 auto 20px auto;
-  text-align: left;
-}
-h1{
-  text-align: center;
-}
 
-h2{
-  text-align: center;
-}
-
-
-p {
-width: 50%;
-  margin: 0 auto 20px auto;
-  text-align: left;
-}
-
-.container{
+.container {
   width: 75%;
   margin: 0 auto;
 }
 
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  width: 75%; /* Adjusted width for better readability */
+  margin: 0 auto 20px auto;
+}
 
 #top-header {
   background-color: #fff;
   color: #d7c8c8;
-  padding-left: 400px;
-  padding-right: 400px;
-  padding-top: 10px;
-  padding-bottom:10px;
+  padding: 10px;
   display: flex;
-  font-size: 15px;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
@@ -112,13 +86,11 @@ width: 50%;
 #contact-info a {
   color: #333;
   font-weight: bold;
-  font-size: 15px;
   text-decoration: none;
   margin-right: 10px;
 }
 
 .dropdown {
-  display: inline-block;
   position: relative;
 }
 
@@ -134,7 +106,6 @@ width: 50%;
   color: #fff;
   padding: 12px 16px;
   text-decoration: none;
-  display: inline-block; /* Display options inline */
 }
 
 .dropdown-content a:hover {
@@ -172,27 +143,22 @@ width: 50%;
 .banner {
   background-color: #71ccdc;
   text-align: center;
-  width: 100%;
 }
 
-.college-image{
+.college-image {
   width: 150px;
-  margin: 0 0 0 15px;
+  margin-left: 15px; /* Adjusted margin for better spacing */
 }
 
 .navbar {
-
-  padding-left: 400px;
-  padding-right: 400px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  padding: 25px 400px; /* Adjusted padding for better alignment */
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   background-color: #4fa5f5;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -229,10 +195,6 @@ width: 50%;
   font-size: 40px;
   color: #fff;
   -webkit-text-stroke: 1.5px #000000;
-}
-
-.content p {
-  margin-bottom: 20px;
 }
 
 button {
@@ -344,31 +306,35 @@ search {
   background-color: #0056b3;
 }
 
-
-/*blog post*/
+/* New styles for blog page */
 .blog-post {
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
   padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-.blog-post h3 {
+.blog-post h2 {
+  font-size: 28px;
   margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .blog-post p {
-  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 .blog-post .author {
-  color: #666;
   font-style: italic;
+  color: #777;
 }
-
-
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .navbar {
+    padding: 25px;
     flex-direction: column;
   }
 
@@ -381,17 +347,17 @@ search {
     margin-right: 0;
     margin-bottom: 10px;
   }
+
+  p {
+    width: 100%; /* Adjusted width for smaller screens */
+  }
 }
 
-
-    /* Footer */
-
-    footer {
-      bottom: 0;
-      width: 100%;
-      background-color: #4682b4;
-      color: #fff;
-      text-align: center;
-    }
-
-
+/* Footer */
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #4682b4;
+  color: #fff;
+  text-align: center;
+}

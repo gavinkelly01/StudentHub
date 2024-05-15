@@ -120,13 +120,14 @@ width: 50%;
 .dropdown {
   display: inline-block;
   position: relative;
+  width: fit-content;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #4682b4;
-  min-width: 160px;
+  width: fit-content;
   z-index: 1;
 }
 
@@ -139,10 +140,14 @@ width: 50%;
 
 .dropdown-content a:hover {
   background-color: #6a5acd;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 #menu-nav {
@@ -253,7 +258,6 @@ button {
 
 button:hover {
   background-color: #6a5acd;
-  transform: translateY(-2px);
 }
 
 button::before {

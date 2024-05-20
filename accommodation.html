@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Student Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accomodation.css">
   <meta name="description" content="">
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -40,14 +40,14 @@
     <div class="dropdown">
       <button class="dropbtn">Finance</button>
       <div class="dropdown-content">
-        <a href="accommodation.html">Accommodation</a>
+        <a href="#">Accommodation</a>
         <a href="#">Student Grants</a>
         <a href="#">Cost of Living Guides</a>
         <a href="#">Employment</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Health</button>
+      <button class="dropbtn">Health & Wellbeing</button>
       <div class="dropdown-content">
         <a href="#">Health</a>
         <a href="#">Mental Health</a>
@@ -59,12 +59,11 @@
       <button class="dropbtn">Resources</button>
       <div class="dropdown-content">
         <a href="#">College Resources</a>
-        <a href="#">Local Organisations</a>
-        <a href="#">Healthcare Information</a>
+        <a href="#">Local Organizations</a>
+        <a href="#">Medical Information</a>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <div id="menu-nav">
@@ -78,23 +77,18 @@
     <img src="img/dublinlogo.png" class="logo">
     <ul>
       <li><a href="#">HOME</a></li>
-      <li><a href="#">EVENTS</a></li>
+      <li><a href="#">BLOG</a></li>
       <li><a href="#">COLLEGES</a></li>
-      <li><a href="#">HEALTH</a></li>
       <li><a href="#">CONTACT US</a></li>
     </ul>
   </div>
 
 
-  <div class="events">
-    <h2>Upcoming Events in Dublin</h2>
-    <div id="event-list"></div>
-  </div>
-
   <div class="content">
 
-    <h1> This is the accommodation page</h1>
-    <p></p>
+    <h1>College Page</h1>
+    <img src="img/collegelife.png" class="college-image">
+    <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
     <div>
       <button type="button"  id="button1">EVENTS</button>
       <button type="button"  id="button2">INFORMATION</button>
@@ -103,15 +97,46 @@
   </div>
 </div>
 
-<div class="sidebar">
-  <div class="search">
-    <input type="text" placeholder="Search...">
-    <button type="submit">Search</button>
+  </div>
+<div class="content">
+  <h1>College Page</h1>
+  <img src="img/collegelife.png" class="college-image">
+  <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
+  <div>
+    <button type="button"  id="button1">EVENTS</button>
+    <button type="button"  id="button2">INFORMATION</button>
+  </div>
+</div>
+
+<div class="accordion">
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse1')">Introduction <span class="arrow">&#9660;</span></h2>
+  <div id="collapse1" class="accordion-content" style="display: none;">
+    <p>
+      Welcome to the Accommodation Page of the Dublin Student Website! Finding suitable accommodation is crucial for students, and this page aims to provide valuable information and resources to make your search easier.
+    </p>
   </div>
 
-</div>
-<div class = paragraphs style="width:75%;right:0">
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse2')">Cost of Living <span class="arrow">&#9660;</span></h2>
+  <div id="collapse2" class="accordion-content" style="display: none;">
+    <p>
+      Understanding the cost of living in Dublin is essential for planning your budget. From rent to groceries and transportation, we'll break down the expenses to help you manage your finances effectively.
+    </p>
+  </div>
 
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse3')">Accommodation Websites and Guides <span class="arrow">&#9660;</span></h2>
+  <div id="collapse3" class="accordion-content" style="display: none;">
+    <p>
+      Discovering the right accommodation can be overwhelming. We've compiled a list of trusted websites and guides to assist you in your search. From student accommodations to shared apartments, explore various options tailored to your preferences.
+    </p>
+  </div>
+
+  <!-- New collapsible paragraph -->
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse4')">Additional Information <span class="arrow">&#9660;</span></h2>
+  <div id="collapse4" class="accordion-content" style="display: none;">
+    <p>
+      Here is some additional information that you can collapse and expand as needed.
+    </p>
+  </div>
 </div>
 
 

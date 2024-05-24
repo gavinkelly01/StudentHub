@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -32,27 +33,27 @@
     <div class="dropdown">
       <button class="dropbtn">Events</button>
       <div class="dropdown-content">
-        <a href="#">Nightlife</a>
-        <a href="#">Concerts</a>
-        <a href="#">Entertainment</a>
+        <a href="#" onclick="navigateTo('nightlife.html')">Nightlife</a>
+        <a href="#" onclick="navigateTo('concerts.html')">Concerts</a>
+        <a href="#" onclick="navigateTo('entertainment.html')">Entertainment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Finance</button>
       <div class="dropdown-content">
-        <a href="accommodation.html">Accommodation</a>
-        <a href="#">Student Grants</a>
-        <a href="#">Cost of Living Guides</a>
-        <a href="#">Employment</a>
+        <a href="accommodation.html" onclick="navigateTo('accommodation.html')">Accommodation</a>
+        <a href="#" onclick="navigateTo('student-grants.html')">Student Grants</a>
+        <a href="#" onclick="navigateTo('cost-of-living.html')">Cost of Living Guides</a>
+        <a href="#" onclick="navigateTo('employment.html')">Employment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Health</button>
       <div class="dropdown-content">
-        <a href="#">Health</a>
-        <a href="#">Mental Health</a>
-        <a href="#">Sex & Relationships</a>
-        <a href="#">LGBTIA +</a>
+        <a href="#" onclick="navigateTo('health.html')">Health</a>
+        <a href="#" onclick="navigateTo('mental-health.html')">Mental Health</a>
+        <a href="#" onclick="navigateTo('sex-relationships.html')">Sex & Relationships</a>
+        <a href="#" onclick="navigateTo('lgbtia.html')">LGBTIA +</a>
       </div>
     </div>
     <div class="dropdown">
@@ -79,11 +80,12 @@
   <div class= "navbar">
     <img src="img/dublinlogo.png" class="logo">
     <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">BLOG</a></li>
-      <li><a href="#">COLLEGES</a></li>
-      <li><a href="#">CONTACT US</a></li>
-    </ul>
+      <li><a href="index.html" onclick="navigateTo('index.html')">Home</a></li>
+      <li><a href="about.html" onclick="navigateTo('about.html')">About</a></li>
+      <li><a href="services.html" onclick="navigateTo('services.html')">Services</a></li>
+      <li><a href="contact.html" onclick="navigateTo('contact.html')">Contact</a></li>
+      <li><a href="blog.html" onclick="navigateTo('blog.html')">Blog</a></li>
+
   </div>
 
 
@@ -105,10 +107,11 @@
 <h2>Type below to search website!</h2>
 <div class="searchbar">
   <div class="search">
-    <input type="text" placeholder="Search...">
-    <button type="submit">Search</button>
+    <input type="text" id="search-input" placeholder="Search...">
+    <button type="submit" onclick="performSearch()">Search</button>
   </div>
   <br>
+</div>
 
 </div>
 <h2> What is Dublin Student Hub Website?</h2>

@@ -32,27 +32,27 @@
     <div class="dropdown">
       <button class="dropbtn">Events</button>
       <div class="dropdown-content">
-        <a href="#">Nightlife</a>
-        <a href="#">Concerts</a>
-        <a href="#">Entertainment</a>
+        <a href="#" onclick="navigateTo('nightlife.html')">Nightlife</a>
+        <a href="#" onclick="navigateTo('concerts.html')">Concerts</a>
+        <a href="#" onclick="navigateTo('entertainment.html')">Entertainment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Finance</button>
       <div class="dropdown-content">
-        <a href="#">Accomodation</a>
-        <a href="#">Student Grants</a>
-        <a href="#">Cost of Living Guides</a>
-        <a href="#">Employment</a>
+        <a href="accommodation.html" onclick="navigateTo('accommodation.html')">Accommodation</a>
+        <a href="studentgrants.html" onclick="navigateTo('studentgrants.html')">Student Grants</a>
+        <a href="#" onclick="navigateTo('cost-of-living.html')">Cost of Living Guides</a>
+        <a href="#" onclick="navigateTo('employment.html')">Employment</a>
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Health & Wellbeing</button>
+      <button class="dropbtn">Health</button>
       <div class="dropdown-content">
-        <a href="#">Health</a>
-        <a href="#">Mental Health</a>
-        <a href="#">Sex & Relationships</a>
-        <a href="#">LGBTIA +</a>
+        <a href="#" onclick="navigateTo('health.html')">Health</a>
+        <a href="#" onclick="navigateTo('mental-health.html')">Mental Health</a>
+        <a href="#" onclick="navigateTo('sex-relationships.html')">Sex & Relationships</a>
+        <a href="#" onclick="navigateTo('lgbtia.html')">LGBTIA +</a>
       </div>
     </div>
     <div class="dropdown">
@@ -60,11 +60,10 @@
       <div class="dropdown-content">
         <a href="#">College Resources</a>
         <a href="#">Local Organisations</a>
-        <a href="#">Medical Information</a>
+        <a href="#">Healthcare Information</a>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <div id="menu-nav">
@@ -73,14 +72,17 @@
   </ul>
 </div>
 
+
+
 <div class="banner">
   <div class= "navbar">
     <img src="img/dublinlogo.png" class="logo">
     <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">BLOG</a></li>
-      <li><a href="#">COLLEGES</a></li>
-      <li><a href="#">CONTACT US</a></li>
+      <li><a href="index.html" onclick="navigateTo('index.html')">Home</a></li>
+      <li><a href="about.html" onclick="navigateTo('about.html')">About</a></li>
+      <li><a href="services.html" onclick="navigateTo('services.html')">Services</a></li>
+      <li><a href="contact.html" onclick="navigateTo('contact.html')">Contact</a></li>
+      <li><a href="blog.html" onclick="navigateTo('blog.html')">Blog</a></li>
     </ul>
   </div>
 
@@ -106,24 +108,35 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
+
     <div class="blog-post">
-      <h3>Blog Post Title 1</h3>
-      <p class="meta">Date: May 1, 2024</p>
-      <p class="meta author">Author: John Doe</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h3> Students News! </h3>
+      <p class="meta">Date: April 20, 2024</p>
+      <p class="meta author">Author: Eoin Wyse</p>
+      <p>Exciting news for students! SUSI (Student Universal Support Ireland) is now open for applications. If you need financial assistance for your studies, be sure to apply before the deadline. SUSI offers grants and funding to eligible students, so don't miss out on this opportunity to ease the burden of college expenses.</p>
+      <p>Lastly, let's talk democracy. With the Irish general election coming up in the summer, it's crucial for students to exercise their right to vote. Your voice matters, so make sure you're registered and ready to cast your vote. Let's make our voices heard and shape the future of our country!</p>
     </div>
 
     <div class="blog-post">
-      <h3>Blog Post Title 2</h3>
-      <p class="meta">Date: May 2, 2024</p>
-      <p class="meta author">Author: Jane Smith</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h3>Brews & Views: Dublin's Coolest Coffee Haunts</h3>
+      <div class="image-container">
+        <img src="img/coffee.jpg" alt="Coffee" class="coffee-image">
+      </div>
+    <p class="meta">Date: May 1, 2024</p>
+    <p class="meta author">Author: Gavin Kelly</p>
+    <p>Calling all coffee connoisseurs! Gavin here, ready to take you on a caffeinated journey through Dublin's coolest coffee haunts. Buckle up, because we're in for a treat!</p>
+    <p>First stop, The Fumbally. Tucked away in Dublin's Liberties, this cozy cafe is a hidden gem loved by locals and students alike. Sip on their signature flat white as you soak in the artsy atmosphere and catch up on your reading.</p>
+    <p>Next up, Vice Coffee Inc. Located in the heart of Dublin's Creative Quarter, this hipster haven is a must-visit for coffee aficionados. Treat yourself to their velvety cappuccino and indulge in some people-watching as you bask in the vibrant surroundings.</p>
+    <p>Now, let's talk sustainability. If you're passionate about eco-friendly practices, make sure to swing by Cloud Picker Cafe. This sustainable coffee roastery sources beans ethically and serves up delicious brews in a laid-back setting. Plus, their avocado toast is to die for!</p>
+    <p>And for those craving a taste of Italy, look no further than Il Valentino Bakery. Nestled along the River Liffey, this charming cafe offers a slice of la dolce vita with every sip of their rich espresso. Pair it with a freshly baked pastry, and you're in for a treat!</p>
+    <p>So there you have it, folks! Dublin's coffee scene is thriving, and these cafes are just the tip of the iceberg. Get out there, explore, and indulge in the city's finest brews!</p>
+
     </div>
   </div>
 
   <footer>
     <p>Created by © 2024 Dublin Student Hub</p>
   </footer>
-
+</div>
 </body>
 </html>

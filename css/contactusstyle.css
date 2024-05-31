@@ -1,17 +1,37 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-/* Base styles */
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -57,8 +77,6 @@ hr {
   clear: both;
 }
 
-
-
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
@@ -69,39 +87,14 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-h1, h2, h3, h4{
-  width: 50%;
-  margin: 0 auto 20px auto;
-  text-align: left;
-}
-h1{
-  text-align: center;
-}
-
-h2{
-  text-align: center;
-}
-
-
-p {
-width: 50%;
-  margin: 0 auto 20px auto;
-  text-align: left;
-}
-
-.container{
-  width: 75%;
-  margin: 0 auto;
-}
-
 
 #top-header {
   background-color: #fff;
-  color: #d7c8c8;
-  padding-left: 400px;
-  padding-right: 400px;
+  color: #333;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 10px;
-  padding-bottom:10px;
+  padding-bottom: 10px;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
@@ -110,7 +103,7 @@ width: 50%;
 }
 
 #contact-info a {
-  color: #333;
+  color: #4682b4;
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
@@ -120,14 +113,13 @@ width: 50%;
 .dropdown {
   display: inline-block;
   position: relative;
-  width: fit-content;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #4682b4;
-  width: fit-content;
+  min-width: 160px;
   z-index: 1;
 }
 
@@ -140,14 +132,10 @@ width: 50%;
 
 .dropdown-content a:hover {
   background-color: #6a5acd;
-  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  width: fit-content;
+  display: block;
 }
 
 #menu-nav {
@@ -180,15 +168,10 @@ width: 50%;
   width: 100%;
 }
 
-.college-image{
-  width: 150px;
-  margin: 0 0 0 15px;
-}
-
 .navbar {
 
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-shadow: 0 1px 0 rgba(0,0,0,.1);
   background-color: #4fa5f5;
   color: #ffffff;
@@ -258,6 +241,7 @@ button {
 
 button:hover {
   background-color: #6a5acd;
+  transform: translateY(-2px);
 }
 
 button::before {
@@ -348,7 +332,6 @@ search {
   background-color: #0056b3;
 }
 
-
 /*blog post*/
 .blog-post {
   margin-bottom: 30px;
@@ -388,14 +371,12 @@ search {
 }
 
 
-    /* Footer */
+/* Footer */
 
-    footer {
-      bottom: 0;
-      width: 100%;
-      background-color: #4682b4;
-      color: #fff;
-      text-align: center;
-    }
-
-
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #4682b4;
+  color: #fff;
+  text-align: center;
+}

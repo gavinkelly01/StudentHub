@@ -1,0 +1,266 @@
+/* Base styles */
+html {
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: left;
+}
+button {
+  background-color: #4682b4;
+  color: #fff;
+  padding: 7px 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+button:hover {
+  background-color: #6a5acd;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #6a5acd;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button span {
+  background-color: #fff;
+  height: 100%;
+  width: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  border-radius: 25px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.image-container {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.coffee-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#top-header {
+  background-color: #fff;
+  color: #333333;
+  padding: 10px 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#contact-info a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4682b4;
+  width: fit-content;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block; /* Display options inline */
+}
+
+.dropdown-content a:hover {
+  background-color: #6a5acd;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+#menu-nav {
+  background-color: #4682b4;
+}
+
+#menu-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-nav-bar li {
+  display: inline;
+}
+
+#menu-nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#menu-nav-bar li a:hover {
+  background-color: #6a5acd;
+}
+
+.banner {
+  background-color: #71ccdc;
+  text-align: center;
+}
+
+.college-image {
+  width: 150px;
+  margin-left: 15px;
+}
+
+.navbar {
+  padding: 25px 400px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #4fa5f5;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar ul li a:hover {
+  color: #cccccc;
+}
+
+/* Blog Post */
+.blog-post {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+  margin-top: 0;
+  color: #4682b4;
+}
+
+.blog-post p {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.blog-post .author {
+  color: #666;
+  font-style: italic;
+}
+
+.blog-post .meta {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #4682b4;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

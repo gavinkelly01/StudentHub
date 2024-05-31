@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -107,25 +106,36 @@
 <h2>Type below to search website!</h2>
 <div class="searchbar">
   <div class="search">
-    <input type="text" id="search-input" placeholder="Search...">
-    <button type="submit" onclick="performSearch()">Search</button>
+    <input type="text" placeholder="Search...">
+    <button type="submit">Search</button>
   </div>
   <br>
+
+</div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
 </div>
 
-
-<h2> What is Dublin Student Hub Website?</h2>
-<div class="description-container">
-  <div class="description-text">
-    <p>Welcome to Dublin Student Hub, your ultimate destination for navigating the vibrant world of student life in Dublin! Whether you're a prospective student or already enrolled in one of Dublin's prestigious institutions, our platform is designed to empower you with essential resources and insights to enrich your educational journey.</p>
-    <p>Explore a myriad of features tailored to enhance your college experience. From comprehensive guides on accommodation and financial aid to tips for maintaining mental well-being and fostering healthy relationships, we've got you covered. Delve into a treasure trove of information encompassing academic support, local organizations, and healthcare resources.</p>
-    <p>Embark on a virtual tour through Dublin's bustling nightlife, electrifying concerts, and captivating entertainment scene. Discover the pulse of the city and seize every opportunity to create unforgettable memories outside the lecture hall.</p>
-    <p>Join us in embracing the spirit of learning, growth, and camaraderie. Dublin Student Hub is more than just a website; it's a dynamic community dedicated to empowering students and nurturing their holistic development. Dive in and unlock the full potential of your college years!</p>
-  </div>
-  <div class="description-image">
-    <img src="img/collegelife.png" alt="Dublin Student Hub" style="width:100%">
-  </div>
-</div>
 
 <script src="js/script.js"></script>
 

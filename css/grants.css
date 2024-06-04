@@ -1,37 +1,17 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
-.arrow {
-  float: right;
-  transition: transform 0.3s ease;
-}
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-.container {
-  width: 75%;
-  margin: 0 auto;
-}
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
-.college-list {
-  margin-top: 20px;
-}
-
-.college-list ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.college-list ul li {
-  margin-bottom: 10px;
-}
-
-.college-list ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-}
-
-.college-list ul li a:hover {
-  color: #007bff;
-}
-
+/* Base styles */
 html {
   color: #222;
   font-size: 1em;
@@ -77,8 +57,6 @@ hr {
   clear: both;
 }
 
-
-
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
@@ -90,18 +68,40 @@ body {
   line-height: 1.6;
 }
 
-.container {
+h1, h2, h3, h4{
+  width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
+p {
+width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.container{
   width: 75%;
   margin: 0 auto;
 }
 
+
 #top-header {
   background-color: #fff;
   color: #d7c8c8;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom:10px;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
@@ -120,13 +120,14 @@ body {
 .dropdown {
   display: inline-block;
   position: relative;
+  width: fit-content;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #4682b4;
-  min-width: 160px;
+  width: fit-content;
   z-index: 1;
 }
 
@@ -139,10 +140,14 @@ body {
 
 .dropdown-content a:hover {
   background-color: #6a5acd;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 #menu-nav {
@@ -175,11 +180,15 @@ body {
   width: 100%;
 }
 
-.navbar {
+.college-image{
+  width: 150px;
+  margin: 0 0 0 15px;
+}
 
-  padding-left: 400px;
-  padding-right: 400px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+.navbar {
+  padding-left: 300px;
+  padding-right: 300px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   background-color: #4fa5f5;
   color: #ffffff;
   display: flex;
@@ -248,7 +257,6 @@ button {
 
 button:hover {
   background-color: #6a5acd;
-  transform: translateY(-2px);
 }
 
 button::before {
@@ -278,7 +286,7 @@ button span {
   left: 0;
   z-index: -1;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 5px;
   position: absolute;
   transition: 0.5s;
 }
@@ -305,61 +313,66 @@ button span {
   max-width: 100%;
   height: auto;
 }
-
-.searchbar {
-  width: 75%;
-  margin: 0 auto 20px auto;
-  text-align: center;
+.info-section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-search {
+.info-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.info-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.video-container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.search input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
+.video-container iframe {
+  max-width: 100%;
 }
 
-.search button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+.useful-links {
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
 
-.search button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-
-/*blog post*/
-.blog-post {
-  margin-bottom: 30px;
+.useful-links h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
 }
 
-.blog-post h3 {
-  margin-top: 0;
+.useful-links ul {
+  list-style: none;
+  padding: 0;
 }
 
-.blog-post p {
-  margin: 10px 0;
+.useful-links ul li {
+  margin-bottom: 10px;
 }
 
-.blog-post .author {
-  color: #666;
-  font-style: italic;
+.useful-links ul li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
+.useful-links ul li a:hover {
+  color: #0056b3;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -379,15 +392,37 @@ search {
 }
 
 
-/* Footer */
+    /* Footer */
 
 footer {
-  bottom: 0;
-  width: 100%;
-  background-color: #4682b4;
+  background-color: #4fa5f5;
   color: #fff;
   text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 0;
+  }
 
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .description-container {
+    flex-direction: column;
+  }
+
+  .description-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

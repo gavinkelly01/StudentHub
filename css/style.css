@@ -57,8 +57,6 @@ hr {
   clear: both;
 }
 
-
-
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
@@ -69,11 +67,13 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+
 h1, h2, h3, h4{
   width: 50%;
   margin: 0 auto 20px auto;
   text-align: left;
 }
+
 h1{
   text-align: center;
 }
@@ -98,8 +98,8 @@ width: 50%;
 #top-header {
   background-color: #fff;
   color: #d7c8c8;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 10px;
   padding-bottom:10px;
   display: flex;
@@ -186,10 +186,9 @@ width: 50%;
 }
 
 .navbar {
-
-  padding-left: 400px;
-  padding-right: 400px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  padding-left: 300px;
+  padding-right: 300px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   background-color: #4fa5f5;
   color: #ffffff;
   display: flex;
@@ -287,7 +286,7 @@ button span {
   left: 0;
   z-index: -1;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 5px;
   position: absolute;
   transition: 0.5s;
 }
@@ -313,39 +312,6 @@ button span {
 .description-image img {
   max-width: 100%;
   height: auto;
-}
-
-.searchbar {
-  width: 75%;
-  margin: 0 auto 20px auto;
-  text-align: center;
-}
-
-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-.search button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-.search button[type="submit"]:hover {
-  background-color: #0056b3;
 }
 
 

@@ -1,16 +1,3 @@
-/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 /* Base styles */
 html {
   color: #222;
@@ -84,7 +71,7 @@ h2{
 
 
 p {
-width: 50%;
+  width: 50%;
   margin: 0 auto 20px auto;
   text-align: left;
 }
@@ -116,6 +103,8 @@ width: 50%;
   text-decoration: none;
   margin-right: 10px;
 }
+
+
 
 .dropdown {
   display: inline-block;
@@ -180,16 +169,15 @@ width: 50%;
   width: 100%;
 }
 
-.college-image{
+.college-image {
   width: 150px;
   margin: 0 0 0 15px;
 }
 
 .navbar {
-
-  padding-left: 400px;
-  padding-right: 400px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   background-color: #4fa5f5;
   color: #ffffff;
   display: flex;
@@ -224,6 +212,7 @@ width: 50%;
   color: #cccccc;
 }
 
+/* Content */
 .content {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -240,68 +229,36 @@ width: 50%;
   margin-bottom: 20px;
 }
 
-button {
-  background-color: #4682b4;
-  color: #fff;
-  padding: 7px 12px;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s, transform 0.2s;
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  position: relative;
+/* Improved formatting for list items */
+.content ul,
+.content ol {
+  margin-left: 20px;
 }
 
-button:hover {
-  background-color: #6a5acd;
+.content ul li,
+.content ol li {
+  margin-bottom: 10px;
 }
 
-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #6a5acd;
-  transition: width 0.3s;
-  z-index: -1;
-}
-
-button:hover::before {
-  width: 100%;
-}
-
-button:hover span {
-  width: 100%;
-}
-
-button span {
-  background-color: #fff;
-  height: 100%;
-  width: 0;
-  left: 0;
-  z-index: -1;
-  bottom: 0;
-  border-radius: 25px;
-  position: absolute;
-  transition: 0.5s;
-}
-
+/* Description Container */
 .description-container {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .description-text {
-  flex: 4;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  flex: 1;
 }
 
 .description-image {
   flex: 1;
+  text-align: center;
 }
 
 .description-photo {
@@ -311,20 +268,15 @@ button span {
 }
 
 .description-image img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
 }
 
+/* Searchbar */
 .searchbar {
   width: 75%;
   margin: 0 auto 20px auto;
   text-align: center;
-}
-
-search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .search input[type="text"] {
@@ -348,8 +300,7 @@ search {
   background-color: #0056b3;
 }
 
-
-/*blog post*/
+/* Blog Post */
 .blog-post {
   margin-bottom: 30px;
   border-bottom: 1px solid #ccc;
@@ -369,6 +320,59 @@ search {
   font-style: italic;
 }
 
+.section-break {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 40px 0;
+}
+
+/* Eventbrite Button */
+.eventbrite-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.eventbrite-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.eventbrite-button a:hover {
+  background-color: #6a5acd;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.video-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -384,41 +388,5 @@ search {
     display: block;
     margin-right: 0;
     margin-bottom: 10px;
-  }
-}
-
-
-    /* Footer */
-
-footer {
-  background-color: #4fa5f5;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 15px 0;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  .navbar ul li {
-    margin-bottom: 10px;
-  }
-
-  .description-container {
-    flex-direction: column;
-  }
-
-  .description-text {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 }

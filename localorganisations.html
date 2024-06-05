@@ -1,21 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dublin Student Website</title>
   <link rel="stylesheet" href="css/localorgstyle.css">
-  <meta name="description" content="">
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
-
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -24,7 +17,7 @@
 <div id="top-header">
   <div id="contact-info">
     <span id="email-icon">Email:</span>
-    <a href="email:dubstudentteamire@gmail.com">dubstudentteamire@gmail.com</a>
+    <a href="mailto:dubstudentteamire@gmail.com">dubstudentteamire@gmail.com</a>
     <span id="phone-icon">Phone:</span>
     <a href="tel:+000000000">0000 000 000</a>
   </div>
@@ -72,11 +65,9 @@
   </ul>
 </div>
 
-
-
 <div class="banner">
-  <div class= "navbar">
-    <img src="img/dublinlogo.png" class="logo">
+  <div class="navbar">
+    <img src="img/dublinlogo.png" class="logo" alt="Dublin Logo">
     <ul>
       <li><a href="index.html" onclick="navigateTo('index.html')">Home</a></li>
       <li><a href="about.html" onclick="navigateTo('about.html')">About</a></li>
@@ -87,19 +78,15 @@
   </div>
 </div>
 
-
-
-
-  <div class="content">
-
-    <h1> Home Page</h1>
-    <img src="img/collegelife.png" class="college-image">
-    <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
-    <div>
-      <button type="button"  id="button1">EVENTS</button>
-      <button type="button"  id="button2">INFORMATION</button>
-    </div>
+<div class="content">
+  <h1>Home Page</h1>
+  <img src="img/collegelife.png" class="college-image" alt="College Life">
+  <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
+  <div class="buttons">
+    <button type="button" id="button1">EVENTS</button>
+    <button type="button" id="button2">INFORMATION</button>
   </div>
+</div>
 
 <div class="support-groups-description">
   <h2>Why Joining Support Groups Is Important</h2>
@@ -118,8 +105,12 @@
       <li><a href="#">Dublin LGBTQ+ Pride</a> - <span>Contact: info@dublinpride.ie</span></li>
       <li><a href="#">BeLonG To Youth Services</a> - <span>Contact: info@belongto.org</span></li>
       <li><a href="#">LGBT Ireland</a> - <span>Contact: info@lgbt.ie</span></li>
-
     </ul>
+    <img src="img/lgbtq-support.jpg" alt="LGBTQ+ Support">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XXXXXXXXX" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.999389264815!2d-6.264842684138332!3d53.33819898208282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8d49fc81a5%3A0x4828ab032bcec43e!2sDublin%20LGBTQ%20Pride!5e0!3m2!1sen!2sie!4v1588272211716!5m2!1sen!2sie" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
   </div>
 
   <div class="organization-card">
@@ -128,33 +119,34 @@
       <li><a href="#">AsIAm</a> - <span>Contact: info@asiam.ie</span></li>
       <li><a href="#">Autism Rights Group</a> - <span>Contact: info@arg.ie</span></li>
       <li><a href="#">Irish Society for Autism</a> - <span>Contact: info@irishsocietyforautism.ie</span></li>
-
     </ul>
+    <img src="img/autism-support.jpg" alt="Autism Support">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YYYYYYYYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.999389264815!2d-6.264842684138332!3d53.33819898208282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8d49fc81a5%3A0x4828ab032bcec43e!2sAsIAm!5e0!3m2!1sen!2sie!4v1588272211716!5m2!1sen!2sie" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
   </div>
 
   <div class="organization-card">
-    <h3>Support Groups for Mental Health</h3>
+    <h3>Mental Health Support Groups</h3>
     <ul>
-      <li><a href="#">Mental Health Ireland</a> - <span>Contact: info@mentalhealthireland.ie</span></li>
-      <li><a href="#">Aware</a> - <span>Contact: info@aware.ie</span></li>
-      <li><a href="#">Pieta House</a> - <span>Contact: info@pieta.ie</span></li>
+      <li><a href="#">SpunOut.ie</a> - <span>Contact: info@spunout.ie</span></li>
+      <li><a href="#">Jigsaw</a> - <span>Contact: info@jigsaw.ie</span></li>
+      <li><a href="#">ReachOut Ireland</a> - <span>Contact: info@reachout.com</span></li>
     </ul>
+    <img src="img/mental-health-support.jpg" alt="Mental Health Support">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZZZZZZZZZ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.999389264815!2d-6.264842684138332!3d53.33819898208282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8d49fc81a5%3A0x4828ab032bcec43e!2sSpunOut!5e0!3m2!1sen!2sie!4v1588272211716!5m2!1sen!2sie" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
   </div>
-
-  <div class="organization-card">
-    <h3>Support Groups for Mental Health</h3>
-    <ul>
-      <li><a href="#">Mental Health Ireland</a> - <span>Contact: info@mentalhealthireland.ie</span></li>
-      <li><a href="#">Aware</a> - <span>Contact: info@aware.ie</span></li>
-      <li><a href="#">Pieta House</a> - <span>Contact: info@pieta.ie</span></li>
-    </ul>
-  </div>
-
 </div>
 
-<footer>
-  Created by© 2024 Dublin Student Hub
-</footer>
+<script>
+  function navigateTo(page) {
+    window.location.href = page;
+  }
+</script>
 
 </body>
 </html>

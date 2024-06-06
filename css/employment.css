@@ -348,7 +348,9 @@ button span {
   transition: 0.5s;
 }
 
-
+#div3 .collapsible-content ul li {
+  text-align: left;
+}
 
 
 

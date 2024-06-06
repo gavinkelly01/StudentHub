@@ -1,37 +1,17 @@
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
+/* Base styles */
 html {
   color: #222;
   font-size: 1em;
@@ -88,13 +68,40 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3, h4{
+  width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
+p {
+width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+
 #top-header {
   background-color: #fff;
-  color: #333;
-  padding-left: 20px;
-  padding-right: 20px;
+  color: #d7c8c8;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom:10px;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
@@ -103,7 +110,7 @@ body {
 }
 
 #contact-info a {
-  color: #4682b4;
+  color: #333;
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
@@ -113,13 +120,14 @@ body {
 .dropdown {
   display: inline-block;
   position: relative;
+  width: fit-content;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #4682b4;
-  min-width: 160px;
+  width: fit-content;
   z-index: 1;
 }
 
@@ -132,10 +140,14 @@ body {
 
 .dropdown-content a:hover {
   background-color: #6a5acd;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 #menu-nav {
@@ -168,11 +180,15 @@ body {
   width: 100%;
 }
 
-.navbar {
+.college-image{
+  width: 150px;
+  margin: 0 0 0 15px;
+}
 
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+.navbar {
+  padding-left: 300px;
+  padding-right: 300px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
   background-color: #4fa5f5;
   color: #ffffff;
   display: flex;
@@ -241,7 +257,6 @@ button {
 
 button:hover {
   background-color: #6a5acd;
-  transform: translateY(-2px);
 }
 
 button::before {
@@ -271,7 +286,7 @@ button span {
   left: 0;
   z-index: -1;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 5px;
   position: absolute;
   transition: 0.5s;
 }
@@ -298,60 +313,66 @@ button span {
   max-width: 100%;
   height: auto;
 }
-
-.searchbar {
-  width: 75%;
-  margin: 0 auto 20px auto;
-  text-align: center;
+.info-section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
-search {
+.info-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.info-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.video-container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.search input[type="text"] {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
+.video-container iframe {
+  max-width: 100%;
 }
 
-.search button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+.useful-links {
+  background-color: #f4f4f4;
+  border-radius: 5px;
 }
 
-.search button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-/*blog post*/
-.blog-post {
-  margin-bottom: 30px;
+.useful-links h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
 }
 
-.blog-post h3 {
-  margin-top: 0;
+.useful-links ul {
+  list-style: none;
+  padding: 0;
 }
 
-.blog-post p {
-  margin: 10px 0;
+.useful-links ul li {
+  margin-bottom: 10px;
 }
 
-.blog-post .author {
-  color: #666;
-  font-style: italic;
+.useful-links ul li a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
+.useful-links ul li a:hover {
+  color: #0056b3;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -371,7 +392,7 @@ search {
 }
 
 
-/* Footer */
+    /* Footer */
 
 footer {
   background-color: #4fa5f5;
@@ -379,4 +400,29 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .description-container {
+    flex-direction: column;
+  }
+
+  .description-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }

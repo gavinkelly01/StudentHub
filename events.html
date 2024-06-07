@@ -32,7 +32,7 @@
     <div class="dropdown">
       <button class="dropbtn">Events</button>
       <div class="dropdown-content">
-        <a href="#" onclick="navigateTo('nightlife.html')">Nightlife</a>
+        <a href="nightlife.html" onclick="navigateTo('nightlife.html')">Nightlife</a>
         <a href="#" onclick="navigateTo('concerts.html')">Concerts</a>
         <a href="#" onclick="navigateTo('entertainment.html')">Entertainment</a>
       </div>
@@ -43,23 +43,23 @@
         <a href="accommodation.html" onclick="navigateTo('accommodation.html')">Accommodation</a>
         <a href="studentgrants.html" onclick="navigateTo('studentgrants.html')">Student Grants</a>
         <a href="#" onclick="navigateTo('cost-of-living.html')">Cost of Living Guides</a>
-        <a href="#" onclick="navigateTo('employment.html')">Employment</a>
+        <a href="employment.html" onclick="navigateTo('employment.html')">Employment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Health</button>
       <div class="dropdown-content">
-        <a href="#" onclick="navigateTo('health.html')">Health</a>
-        <a href="#" onclick="navigateTo('mental-health.html')">Mental Health</a>
+        <a href="Health.html" onclick="navigateTo('health.html')">Health</a>
+        <a href="Mental Health.html" onclick="navigateTo('mental-health.html')">Mental Health</a>
         <a href="#" onclick="navigateTo('sex-relationships.html')">Sex & Relationships</a>
-        <a href="#" onclick="navigateTo('lgbtia.html')">LGBTIA +</a>
+        <a href="lgbt.html" onclick="navigateTo('lgbt.html')">LGBTIA +</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Resources</button>
       <div class="dropdown-content">
-        <a href="#">College Resources</a>
-        <a href="#">Local Organisations</a>
+        <a href="resources.html" onclick="navigateTo('resources.html')">College Resources</a>
+        <a href="localorganisations.html" onclick="navigateTo('local-organisations.html')">Local Organisations</a>
         <a href="#">Healthcare Information</a>
       </div>
     </div>
@@ -111,7 +111,17 @@
   </div>
   <br>
 
+  <h2>Events in Dublin</h2>
+  <div id="filter-buttons">
+    <button class="filter-button" data-type="all">All</button>
+    <button class="filter-button" data-type="music">Music</button>
+    <button class="filter-button" data-type="sports">Sports</button>
+    <button class="filter-button" data-type="arts">Arts</button>
+    <!-- Add more buttons for different event types -->
+  </div>
+  <ul id="events-list"></ul>
 </div>
+
 <h2> What is Dublin Student Hub Website?</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida. Tempus urna et pharetra pharetra massa. In egestas erat imperdiet sed euismod nisi. Ac odio tempor orci dapibus ultrices in iaculis. Cursus risus at ultrices mi. Arcu non odio euismod lacinia at. Ac tincidunt vitae semper quis lectus nulla at volutpat. Enim sit amet venenatis urna cursus eget nunc. Eu facilisis sed odio morbi quis commodo odio. Pretium quam vulputate dignissim suspendisse in est. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Tincidunt eget nullam non nisi est sit amet facilisis magna. Nibh cras pulvinar mattis nunc. Ornare quam viverra orci sagittis eu volutpat odio facilisis.</p>
   <p>Ipsum consequat nisl vel pretium lectus quam id. Eros in cursus turpis massa tincidunt dui ut ornare. Consequat interdum varius sit amet mattis vulputate. Aliquam sem fringilla ut morbi. Nullam vehicula ipsum a arcu cursus vitae congue. Dui sapien eget mi proin sed libero. Diam maecenas sed enim ut. A condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Justo laoreet sit amet cursus sit amet. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Purus non enim praesent elementum facilisis leo vel fringilla est. Lacus luctus accumsan tortor posuere. At risus viverra adipiscing at in tellus.</p>
@@ -121,7 +131,7 @@
 
 
 
-<script src="js/script.js"></script>
+<script src="js/eventscript.js"></script>
 
 <footer>
   Created by© 2024 Dublin Student Hub

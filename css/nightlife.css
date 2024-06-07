@@ -420,3 +420,103 @@ footer {
     margin-bottom: 10px;
   }
 }
+
+.lgbtq-establishments {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.establishments-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lgbtq-establishments h2 {
+  text-align: center; /* Centered heading */
+  margin-bottom: 30px; /* Spacing below heading */
+}
+
+.lgbtq-establishments p {
+  text-align: center; /* Centered paragraph */
+}
+
+.lgbtq-establishments ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default list padding */
+  position: relative; /* Relative positioning for absolute elements */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.lgbtq-establishments li {
+  margin-bottom: 20px; /* Spacing between list items */
+  position: relative; /* Relative positioning for absolute elements */
+  transition: transform 0.5s ease; /* Smooth transition */
+  transform: translateX(0); /* Initial position */
+}
+
+.lgbtq-establishments li strong {
+  color: #71ccdc; /* Highlighted text color */
+}
+
+.lgbtq-establishments li::before {
+  content: "\2022"; /* Bullet point style */
+  color: #71ccdc; /* Bullet point color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Hover effect for list items */
+.lgbtq-establishments li:hover {
+  background-color: #333; /* Darker background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Slide-in animation */
+.lgbtq-establishments li.slide-in {
+  transform: translateX(0); /* Initial position */
+}
+
+/* Slide-out animation */
+.lgbtq-establishments li.slide-out {
+  transform: translateX(-100%); /* Slide out to the left */
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px; /* Spacing between the section and slider */
+}
+
+/* Slides */
+.slides {
+  display: flex;
+}
+
+/* Navigation buttons */
+.navigation-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  z-index: 1; /* Ensure navigation buttons are above slides */
+}
+
+.navigation-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}

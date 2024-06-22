@@ -56,3 +56,6 @@ Our goal is to build a comprehensive online platform that provides Dublin studen
 - **Aisha Ntuli** - Front End Developer.
 - **Dillon O'Connor** - UI/UX Developer.
 - **Gavin Kelly** - Back End Developer.
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.

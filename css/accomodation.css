@@ -315,7 +315,6 @@ button {
 
 button:hover {
   background-color: #6a5acd;
-  transform: translateY(-2px);
 }
 
 button::before {

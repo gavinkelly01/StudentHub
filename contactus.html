@@ -20,7 +20,6 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
 <div id="top-header">
   <div id="contact-info">
     <span id="email-icon">Email:</span>
@@ -91,49 +90,32 @@
 
 
 
-  <div class="content">
+  <div class="content">    </div>
 
-    <h1> Home Page</h1>
-    <img src="img/collegelife.png" class="college-image">
-    <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
-    <div>
-      <button type="button"  id="button1">EVENTS</button>
-      <button type="button"  id="button2">INFORMATION</button>
-    </div>
+  <div class="container">
+    <form action="submit_contact.php" method="post">
 
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email" placeholder="Your email address..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
   </div>
-</div>
 
-<div class="container">
-  <form action="submit_contact.php" method="post">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
-
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
 <footer>
   Created by© 2024 Dublin Student Hub
 </footer>
-
-</body>
+  </div>
 </html>

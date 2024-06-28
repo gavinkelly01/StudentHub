@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dublin Student Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<div id="top-header">
+  <div id="contact-info">
+    <span id="email-icon">Email:</span>
+    <a href="email:dubstudentteamire@gmail.com">dubstudentteamire@gmail.com</a>
+    <span id="phone-icon">Phone:</span>
+    <a href="tel:+000000000">0000 000 000</a>
+  </div>
+  <div id="dropdown-menu">
+    <div class="dropdown">
+      <button class="dropbtn">Events</button>
+      <div class="dropdown-content">
+        <a href="nightlife.html" onclick="navigateTo('nightlife.html')">Nightlife</a>
+        <a href="concerts.html" onclick="navigateTo('concerts.html')">Concerts</a>
+        <a href="#" onclick="navigateTo('entertainment.html')">Entertainment</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Finance</button>
+      <div class="dropdown-content">
+        <a href="accommodation.html" onclick="navigateTo('accommodation.html')">Accommodation</a>
+        <a href="studentgrants.html" onclick="navigateTo('studentgrants.html')">Student Grants</a>
+        <a href="CostOfLiving.html" onclick="navigateTo('CostOfLiving.html')">Cost of Living Guides</a>
+        <a href="employment.html" onclick="navigateTo('employment.html')">Employment</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Health</button>
+      <div class="dropdown-content">
+        <a href="Health.html" onclick="navigateTo('Health.html')">Health</a>
+        <a href="Physical%20Health.html" onclick="navigateTo('Physical%20Health.html')">Physical Health</a>
+        <a href="Mental%20Health.html" onclick="navigateTo('mental%20health.html')">Mental Health</a>
+        <a href="Sexual%20Health.html" onclick="navigateTo('Sexual%20Health.html')">Sexual Health</a>
+        <a href="lgbt.html" onclick="navigateTo('lgbt.html')">LGBT</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Resources</button>
+      <div class="dropdown-content">
+        <a href="resources.html" onclick="navigateTo('resources.html')">College Resources</a>
+        <a href="localorganisations.html" onclick="navigateTo('local-organisations.html')">Local Organisations</a>
+        <a href="#">Healthcare Information</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="menu-nav">
+  <ul id="menu-nav-bar" class="menu">
+    <!-- Add your menu items here -->
+  </ul>
+</div>
+
+
+
+<div class="banner">
+  <div class= "navbar">
+    <img src="img/dublinlogo.png" class="logo">
+    <ul>
+      <li><a href="index.html" onclick="navigateTo('index.html')">Home</a></li>
+      <li><a href="about.html" onclick="navigateTo('about.html')">About</a></li>
+      <li><a href="services.html" onclick="navigateTo('services.html')">Services</a></li>
+      <li><a href="contact.html" onclick="navigateTo('contact.html')">Contact</a></li>
+      <li><a href="blog.html" onclick="navigateTo('blog.html')">Blog</a></li>
+    </ul>
+  </div>
+
+
+
+
+  <div class="content">
+
+    <h1> Home Page</h1>
+    <img src="img/collegelife.png" class="college-image">
+    <p>Welcome to the Dublin Student Hub where you can find all fun and important information here,<br> Click the button below to see other content.</p>
+    <div>
+      <button type="button"  id="button1">EVENTS</button>
+      <button type="button"  id="button2">INFORMATION</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <form action="submit_contact.php" method="post">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+<script src="js/script.js"></script>
+
+<footer>
+  Created by© 2024 Dublin Student Hub
+</footer>
+
+</body>
+</html>

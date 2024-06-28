@@ -1,0 +1,522 @@
+/* Base styles */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Helper classes */
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+
+
+/* Custom styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  font-size: 20px;
+  padding: 0;
+  line-height: 1.6;
+}
+h1, h2, h3, h4{
+  width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
+p {
+  width: 50%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+#top-header {
+  background-color: #fff;
+  color: #d7c8c8;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 10px;
+  padding-bottom:10px;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+#contact-info a {
+  color: #333;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4682b4;
+  width: fit-content;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {
+  background-color: #6a5acd;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+#menu-nav {
+  background-color: #4682b4;
+}
+
+#menu-nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-nav-bar li {
+  display: inline;
+}
+
+#menu-nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+#menu-nav-bar li a:hover {
+  background-color: #6a5acd;
+}
+
+.banner {
+  background-color: #71ccdc;
+  text-align: center;
+  width: 100%;
+}
+
+.college-image {
+  width: 150px;
+  margin: 0 0 0 15px;
+}
+
+.navbar {
+  padding-left: 300px;
+  padding-right: 300px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  background-color: #4fa5f5;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar ul li a:hover {
+  color: #cccccc;
+}
+
+button {
+  background-color: #4682b4;
+  color: #fff;
+  padding: 7px 12px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+button:hover {
+  background-color: #6a5acd;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #6a5acd;
+  transition: width 0.3s;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 100%;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+button span {
+  background-color: #fff;
+  height: 100%;
+  width: 0;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+  border-radius: 5px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+/* Content */
+.content {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #fff;
+  -webkit-text-stroke: 1.5px #000000;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+/* Improved formatting for list items */
+.content ul,
+.content ol {
+  margin-left: 20px;
+}
+
+.content ul li,
+.content ol li {
+  margin-bottom: 10px;
+}
+
+/* Description Container */
+.description-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.description-text {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: justify;
+  flex: 1;
+}
+
+.description-image {
+  flex: 1;
+  text-align: center;
+}
+
+.description-photo {
+  flex: 1;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.description-image img {
+  max-width: 60%;
+  height: auto;
+}
+
+
+/* Blog Post */
+.blog-post {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.blog-post h3 {
+  margin-top: 0;
+}
+
+.blog-post p {
+  margin: 10px 0;
+}
+
+.blog-post .author {
+  color: #666;
+  font-style: italic;
+}
+
+.section-break {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 40px 0;
+}
+
+/* Eventbrite Button */
+.eventbrite-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.eventbrite-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4682b4;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.eventbrite-button a:hover {
+  background-color: #6a5acd;
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.video-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  background-color: #4fa5f5;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    margin-top: 20px;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.lgbtq-establishments {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.establishments-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.lgbtq-establishments h2 {
+  text-align: center; /* Centered heading */
+  margin-bottom: 30px; /* Spacing below heading */
+}
+
+.lgbtq-establishments p {
+  text-align: center; /* Centered paragraph */
+}
+
+.lgbtq-establishments ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default list padding */
+  position: relative; /* Relative positioning for absolute elements */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.lgbtq-establishments li {
+  margin-bottom: 20px; /* Spacing between list items */
+  position: relative; /* Relative positioning for absolute elements */
+  transition: transform 0.5s ease; /* Smooth transition */
+  transform: translateX(0); /* Initial position */
+}
+
+.lgbtq-establishments li strong {
+  color: #71ccdc; /* Highlighted text color */
+}
+
+.lgbtq-establishments li::before {
+  content: "\2022"; /* Bullet point style */
+  color: #71ccdc; /* Bullet point color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Hover effect for list items */
+.lgbtq-establishments li:hover {
+  background-color: #333; /* Darker background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Slide-in animation */
+.lgbtq-establishments li.slide-in {
+  transform: translateX(0); /* Initial position */
+}
+
+/* Slide-out animation */
+.lgbtq-establishments li.slide-out {
+  transform: translateX(-100%); /* Slide out to the left */
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px; /* Spacing between the section and slider */
+}
+
+/* Slides */
+.slides {
+  display: flex;
+}
+
+/* Navigation buttons */
+.navigation-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  z-index: 1; /* Ensure navigation buttons are above slides */
+}
+
+.navigation-btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}

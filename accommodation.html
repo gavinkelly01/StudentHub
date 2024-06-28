@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Student Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accomodation.css">
   <meta name="description" content="">
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -32,40 +32,41 @@
     <div class="dropdown">
       <button class="dropbtn">Events</button>
       <div class="dropdown-content">
-        <a href="#">Nightlife</a>
-        <a href="#">Concerts</a>
-        <a href="#">Entertainment</a>
+        <a href="nightlife.html" onclick="navigateTo('nightlife.html')">Nightlife</a>
+        <a href="concerts.html" onclick="navigateTo('concerts.html')">Concerts</a>
+        <a href="#" onclick="navigateTo('entertainment.html')">Entertainment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Finance</button>
       <div class="dropdown-content">
-        <a href="accommodation.html">Accommodation</a>
-        <a href="#">Student Grants</a>
-        <a href="#">Cost of Living Guides</a>
-        <a href="#">Employment</a>
+        <a href="accommodation.html" onclick="navigateTo('accommodation.html')">Accommodation</a>
+        <a href="studentgrants.html" onclick="navigateTo('studentgrants.html')">Student Grants</a>
+        <a href="CostOfLiving.html" onclick="navigateTo('CostOfLiving.html')">Cost of Living Guides</a>
+        <a href="employment.html" onclick="navigateTo('employment.html')">Employment</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Health</button>
       <div class="dropdown-content">
-        <a href="#">Health</a>
-        <a href="#">Mental Health</a>
-        <a href="#">Sex & Relationships</a>
-        <a href="#">LGBTIA +</a>
+        <a href="Health.html" onclick="navigateTo('Health.html')">Health</a>
+        <a href="Physical%20Health.html" onclick="navigateTo('Physical%20Health.html')">Physical Health</a>
+        <a href="Mental%20Health.html" onclick="navigateTo('mental%20health.html')">Mental Health</a>
+        <a href="Sexual%20Health.html" onclick="navigateTo('Sexual%20Health.html')">Sexual Health</a>
+        <a href="lgbt.html" onclick="navigateTo('lgbt.html')">LGBT</a>
       </div>
     </div>
     <div class="dropdown">
       <button class="dropbtn">Resources</button>
       <div class="dropdown-content">
-        <a href="#">College Resources</a>
-        <a href="#">Local Organisations</a>
+        <a href="resources.html" onclick="navigateTo('resources.html')">College Resources</a>
+        <a href="localorganisations.html" onclick="navigateTo('local-organisations.html')">Local Organisations</a>
         <a href="#">Healthcare Information</a>
       </div>
     </div>
   </div>
 </div>
-</div>
+
 
 <div id="menu-nav">
   <ul id="menu-nav-bar" class="menu">
@@ -73,46 +74,128 @@
   </ul>
 </div>
 
+
+
 <div class="banner">
   <div class= "navbar">
     <img src="img/dublinlogo.png" class="logo">
     <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">COLLEGES</a></li>
-      <li><a href="#">HEALTH</a></li>
-      <li><a href="#">CONTACT US</a></li>
+      <li><a href="index.html" onclick="navigateTo('index.html')">Home</a></li>
+      <li><a href="about.html" onclick="navigateTo('about.html')">About</a></li>
+      <li><a href="services.html" onclick="navigateTo('services.html')">Services</a></li>
+      <li><a href="contact.html" onclick="navigateTo('contact.html')">Contact</a></li>
+      <li><a href="blog.html" onclick="navigateTo('blog.html')">Blog</a></li>
     </ul>
   </div>
 
 
-  <div class="events">
-    <h2>Upcoming Events in Dublin</h2>
-    <div id="event-list"></div>
-  </div>
+
 
   <div class="content">
 
-    <h1> This is the accommodation page</h1>
-    <p></p>
-    <div>
-      <button type="button"  id="button1">EVENTS</button>
-      <button type="button"  id="button2">INFORMATION</button>
+    <h1>Accomodation</h1>
+    <img src="img/accomodation.jpg" class="college-image">
+    <p>Welcome to the accomodation page where you may find information relating to cost of living, obtaining accomodation and how to fund this expense,<br> <b>Click the button below to find out more!</b></p>
+
+  </div>
+</div>
+
+<div class="accordion">
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse1')">Introduction <span class="arrow">&#9660;</span></h2>
+  <div id="collapse1" class="accordion-content" style="display: none;">
+    <h2>What is there to know about moving to Dublin!</h2>
+    <p>
+      Welcome to the Dublin Student Website! As a college student in Ireland, one of the most pressing issues you may encounter is finding suitable accommodation. The housing market in Ireland, particularly in urban areas like Dublin, faces significant challenges, including high rent prices, limited availability, and competition from other renters. To navigate these challenges, it's essential to start your accommodation search early, explore various options such as student accommodations, shared apartments, or renting a room in a private house, and consider factors like proximity to your college, transportation options, and budget constraints.
+    </p>
+    <div class="accordion-image">
+      <img src="img/universitiesdublin.jpg" alt="College Life">
     </div>
-
+    <p>
+      In addition to accommodation, college life in Ireland offers a wealth of opportunities for personal and academic growth. From engaging classes and vibrant campus communities to exciting extracurricular activities and cultural events, there's something for everyone to enjoy. However, managing your time, finances, and well-being effectively is key to making the most out of your college experience.
+    </p>
+    <p>
+      Our platform is here to support you every step of the way. Whether you're looking for academic resources, career guidance, mental health support, or tips on maintaining a healthy work-life balance, we've curated a range of articles, videos, and interactive tools to help you succeed. Additionally, we provide insights into the latest campus events, job opportunities, internships, and study abroad programs to help you make the most informed decisions about your college journey.
+    </p>
+    <h3>Tips and Tricks for Improving College Life in Ireland:</h3>
+    <div class="accordion-image">
+      <img src="img/tipsandtricks.png" alt="College Life">
+    </div>
+    <p>
+      <strong>1. Budget Planning:</strong> Plan your budget carefully to manage your expenses effectively, including rent, groceries, transportation, and leisure activities. Consider using budgeting apps or spreadsheets to track your spending.<br>
+      <strong>2. Get Involved:</strong> Join student organizations and clubs to meet new people, explore your interests, and enhance your leadership skills. Participating in extracurricular activities can also enrich your college experience and build your resume.<br>
+      <strong>3. Prioritize Well-being:</strong> Take care of your mental and physical health by maintaining a balanced lifestyle. Practice self-care routines, prioritize sleep, exercise regularly, and seek support from campus resources if needed.<br>
+      <strong>4. Academic Success:</strong> Stay organized and manage your time effectively to balance your academic workload and extracurricular commitments. Utilize study groups, tutoring services, and academic advisors to excel in your courses.<br>
+      <strong>5. Explore Opportunities:</strong> Stay informed about internships, part-time jobs, study abroad programs, and volunteer opportunities. These experiences can help you gain valuable skills, expand your network, and explore career options.<br>
+    </p>
+    <h4>
+      Watch the video below for some insights into college life in Ireland:
+      </h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zvm1e1K9xvg?si=Q7akM1d8TCYviOhO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
   </div>
-</div>
-
-<div class="sidebar">
-  <div class="search">
-    <input type="text" placeholder="Search...">
-    <button type="submit">Search</button>
   </div>
 
-</div>
-<div class = paragraphs style="width:75%;right:0">
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse2')">Cost of Living <span class="arrow">&#9660;</span></h2>
+  <div id="collapse2" class="accordion-content" style="display: none;">
+    <h2>Planning on moving to Dublin for studies?</h2>
+    <p>
+      Understanding the cost of living in Ireland is crucial for planning your budget as a college student. From rent to groceries, transportation to entertainment, managing your expenses effectively is essential to maintain financial stability throughout your college years. To help you navigate the cost of living in Ireland, we've compiled guides, tips, and government information to assist you in budgeting wisely and making informed financial decisions.
+    </p>
+    <p>
+      <strong>Cost of Living Guides:</strong> Explore our curated selection of cost of living guides tailored specifically for college students in Ireland. These guides provide detailed information on average expenses, budgeting tips, and cost-saving strategies to help you stretch your budget further. Check out our <a href="https://example.com/cost-of-living-guide" target="_blank">Cost of Living Guide</a>.
+    </p>
+    <p>
+      <strong>Government Information:</strong> Stay informed about government support programs, grants, and subsidies available to students in Ireland. Whether it's financial assistance for accommodation, tuition fees, or living expenses, government resources can provide valuable support to alleviate financial burdens. Visit the <a href="https://example.gov.ie/student-support" target="_blank">Government Student Support</a> page for more information.
+    </p>
+    <p>
+      <strong>College-specific Resources:</strong> Check with your college's student services department for additional resources and support related to the cost of living. Many colleges offer financial aid programs, student discounts, and housing assistance services to help students manage their expenses effectively.
+    </p>
+    <p>
+      <strong>Budgeting Tips:</strong> Watch the following video for practical tips on budgeting as a college student in Ireland:
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lduGn7BNrNM?si=IwosRIkn8Oze_xfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+  </div>
 
-</div>
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse3')">Accommodation Websites and Guides <span class="arrow">&#9660;</span></h2>
+  <div id="collapse3" class="accordion-content" style="display: none;">
+    <h2>Looking to find accommodation in Ireland?</h2>
+    <div class="accordion-image">
+      <img src="img/Daft_logo1.jpg" alt="College Life">
+    </div>
+    <div class="accordion-image">
+      <img src="img/collegecribs.png" alt="College Life">
+    </div>
+    <p>
+      Finding suitable accommodation in Ireland can be challenging, but there are various resources and methods available to assist students in their search. One of the most popular approaches is to explore accommodation websites specifically tailored for students, such as <a href="https://www.daft.ie/student-accommodation" target="_blank">Daft.ie Student Accommodation</a> and <a href="https://www.collegecribs.ie/" target="_blank">CollegeCribs.ie</a>. These platforms offer listings for student-friendly accommodation options, including shared apartments, student residences, and private rentals. Additionally, leveraging social media platforms like Facebook groups and university forums can be effective in connecting with other students seeking roommates or subletting opportunities. Many colleges also provide assistance with accommodation through their student services departments, offering resources, advice, and even partnerships with affiliated accommodation complexes.
+    </p>
+    <p>
+      When searching for accommodation, it's essential to consider factors such as location, budget, amenities, and proximity to campus. Be sure to visit potential accommodations in person, if possible, to assess the condition of the property and meet any potential roommates or landlords. It's also advisable to review rental agreements carefully and understand your rights and responsibilities as a tenant.
+    </p>
+    <div class="accordion-image">
+      <img src="img/rights-scaled.jpeg" alt="College Life" width="600px">
+    </div>
+    <p>
+      In addition to online resources and social networks, students can also seek guidance from their college's accommodation office or student union. These organizations often provide support and information related to accommodation options, rental contracts, and tenant rights. Some colleges even maintain partnerships with local landlords or accommodation complexes, offering exclusive housing options and favorable rental terms for students.
+    </p>
+    <p>
+      Finally, don't hesitate to reach out to fellow students, alumni, or local residents for recommendations and advice on finding accommodation in Ireland. Networking within the college community and seeking referrals from trusted sources can help streamline the accommodation search process and ensure a positive living experience during your time as a student.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zc2bIhOooFc?si=THNSQRRKZ4q0LTGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+  <!-- New collapsible paragraph -->
+  <h2 class="accordion-header" onclick="toggleAccordion('collapse4')">Additional Information <span class="arrow">&#9660;</span></h2>
+  <div id="collapse4" class="accordion-content" style="display: none;">
+    <h2>Other alternative resources:</h2>
+    <p>
+      Apart from using accommodation websites and social networks, students can also explore alternative options such as homestays, hostels, or house-sharing arrangements with other students. These options may offer unique experiences and cost-saving benefits compared to traditional accommodation arrangements. Additionally, it's essential to be aware of accommodation scams and fraudulent listings when searching for housing online. Always verify the legitimacy of listings and communicate directly with landlords or property managers to ensure a safe and secure housing arrangement. Remember to prioritize your safety and well-being when selecting accommodation options and seek assistance from trusted sources if you encounter any issues during your search.
+    </p>
+    <p>
+      For more information and tips on finding accommodation in Ireland, check out these helpful resources:
+    </p>
+    <ul>
+      <li><a href="https://www.citizensinformation.ie/en/housing/renting_a_home/" target="_blank">Citizens Information - Renting a Home</a></li>
+      <li><a href="https://www.studentaccommodation.ie/" target="_blank">StudentAccommodation.ie - Student Accommodation Guide</a></li>
+      <li><a href="https://www.threshold.ie/advice/finding-a-place-to-live/" target="_blank">Threshold - Finding a Place to Live</a></li>
+    </ul>
+  </div>
 
 
 <script src="js/script.js"></script>

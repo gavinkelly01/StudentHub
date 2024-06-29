@@ -5,6 +5,8 @@ session_start();
 if (empty($_SESSION['token'])) {
     $_SESSION['token'] = bin2hex(random_bytes(32));
 }
+
+$csrfToken = $_SESSION['token'];
 ?>
 
 <!doctype html>
@@ -14,7 +16,7 @@ if (empty($_SESSION['token'])) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Student Website</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contactusstyle.css">
   <meta name="description" content="">
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -117,7 +119,7 @@ if (empty($_SESSION['token'])) {
   <h1>Contact Us</h1>
   <form action="submit_contact.php" method="post">
 
-    <input type="hidden" name="token" value="<?php echo htmlspecialchars($_SESSION['token']); ?>">
+    <input type="hidden" name="token" value="<?php echo htmlspecialchars($csrfToken); ?>">
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -126,7 +128,7 @@ if (empty($_SESSION['token'])) {
     <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email.." required>
+    <input type="email" id="email" name="email" placeholder="Your email.." required>
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>

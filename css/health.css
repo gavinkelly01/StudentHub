@@ -66,6 +66,7 @@ body {
   font-size: 20px;
   padding: 0;
   line-height: 1.6;
+  text-align: center;
 }
 
 h1, h2, h3, h4{
@@ -76,12 +77,24 @@ h1, h2, h3, h4{
 
 h1{
   text-align: center;
+  background-color: #4fa5f5;
+  width:100%;
+  border-bottom: 2px solid black;
 }
 
 h2{
   text-align: center;
+  background-color: #4fa5f6;
+  width: 85%;
+  border-bottom: 2px solid black;
 }
 
+h3{
+  text-align: center;
+  background-color: #4fa5f6;
+  width: 85%;
+  border-bottom: 2px solid black;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -90,9 +103,11 @@ h2{
 }
 
 p {
-  width: 50%;
   margin: 0 auto 50px auto;
   text-align: center;
+  width: 85%;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .center-text{
@@ -111,6 +126,8 @@ p {
 .img-container img {
   width: 15%;
   padding: 25px;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 
 #top-header {

@@ -16,8 +16,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 hr {
@@ -89,9 +89,13 @@ width: 50%;
   text-align: left;
 }
 
-.container{
+.container {
   width: 75%;
   margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: azure;
 }
 
 
@@ -135,7 +139,7 @@ width: 50%;
   color: #fff;
   padding: 12px 16px;
   text-decoration: none;
-  display: inline-block; /* Display options inline */
+  display: inline-block;
 }
 
 .dropdown-content a:hover {

@@ -3,8 +3,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 hr {
@@ -57,9 +57,8 @@ body {
   line-height: 1.6;
 }
 h1, h2, h3, h4{
-  width: 50%;
-  margin: 0 auto 20px auto;
-  text-align: left;
+  margin: 20px auto;
+  text-align: center;
 }
 h1{
   text-align: center;
@@ -69,6 +68,9 @@ h2{
   text-align: center;
 }
 
+h3 {
+  font-size: 28px;
+}
 
 p {
   width: 50%;
@@ -79,6 +81,10 @@ p {
 .container{
   width: 75%;
   margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: azure;
 }
 
 #top-header {
@@ -209,6 +215,22 @@ p {
   color: #cccccc;
 }
 
+.content {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.content h1 {
+  font-size: 40px;
+  color: #fff;
+  -webkit-text-stroke: 1.5px #000000;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
 button {
   background-color: #4682b4;
   color: #fff;
@@ -260,6 +282,30 @@ button span {
   position: absolute;
   transition: 0.5s;
 }
+
+.description-container {
+  display: flex;
+}
+
+.description-text {
+  flex: 4;
+}
+
+.description-image {
+  flex: 1;
+}
+
+.description-photo {
+  flex: 1;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.description-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Content */
 .content {

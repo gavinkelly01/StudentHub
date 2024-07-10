@@ -1,27 +1,26 @@
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=email], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -31,12 +30,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -47,8 +45,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 hr {
@@ -90,24 +88,22 @@ hr {
 
 /* Custom styles */
 body {
-  display: flex;
-  flex-direction: column;
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #f9f9f9;
+  color: #333333;
   margin: 0;
-  font-size: 20px;
   padding: 0;
+  font-size: 18px;
   line-height: 1.6;
 }
 
 #top-header {
   background-color: #fff;
-  color: #333;
-  padding-left: 20px;
-  padding-right: 20px;
+  color: #d7c8c8;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom:10px;
   display: flex;
   font-size: 15px;
   justify-content: space-between;
@@ -116,7 +112,7 @@ body {
 }
 
 #contact-info a {
-  color: #4682b4;
+  color: #333;
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
@@ -234,6 +230,10 @@ body {
 
 .content p {
   margin-bottom: 20px;
+}
+
+.college-image{
+  width: 200px;
 }
 
 button {

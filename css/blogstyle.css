@@ -3,8 +3,8 @@ html {
   color: #222;
   font-size: 16px;
   line-height: 1.6;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -109,13 +109,16 @@ button span {
 
 #top-header {
   background-color: #fff;
-  color: #333333;
-  padding: 10px 400px;
+  color: #d7c8c8;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 10px;
+  padding-bottom:10px;
   display: flex;
+  font-size: 15px;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 16px;
 }
 
 #contact-info a {

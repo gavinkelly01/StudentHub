@@ -3,8 +3,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  overflow-y: scroll; /* Show vertical scrollbar */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 hr {
@@ -16,7 +16,6 @@ hr {
   padding: 0;
 }
 
-/* Helper classes */
 .hidden,
 [hidden] {
   display: none !important;
@@ -49,11 +48,11 @@ hr {
 /* Custom styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #f9f9f9;
+  color: #333333;
   margin: 0;
-  font-size: 20px;
   padding: 0;
+  font-size: 18px;
   line-height: 1.6;
 }
 h1, h2, h3, h4{
@@ -85,8 +84,8 @@ p {
 #top-header {
   background-color: #fff;
   color: #d7c8c8;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 10px;
   padding-bottom:10px;
   display: flex;
@@ -168,7 +167,7 @@ p {
 }
 
 .college-image{
-  width: 150px;
+  width: 350px;
   margin: 0 0 0 15px;
 }
 

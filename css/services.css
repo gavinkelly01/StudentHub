@@ -54,10 +54,12 @@ body {
   padding: 0;
   line-height: 1.6;
 }
+
 h1, h2, h3, h4 {
   margin: 20px auto;
   text-align: center;
 }
+
 h1 {
   text-align: center;
 }
@@ -563,3 +565,63 @@ footer {
   background: rgba(0, 0, 0, 0.7);
 }
 
+/* Centering content */
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-content img {
+  margin-bottom: 20px;
+}
+
+.centered-content p {
+  text-align: center;
+}
+
+.centered-content .description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-content .description-text {
+  width: 100%;
+  text-align: center;
+}
+
+.centered-content .description-image {
+  text-align: center;
+}
+
+.centered-content .description-image img {
+  margin-bottom: 20px;
+}
+
+.centered-content .video-container {
+  text-align: center;
+}
+
+.centered-content .video-wrapper {
+  margin: 0 auto;
+}
+
+.centered-content .blog-post {
+  text-align: center;
+}
+
+.centered-content .blog-post p {
+  text-align: center;
+}
+
+.centered-content .lgbtq-establishments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-content .lgbtq-establishments ul {
+  width: 80%;
+  margin: 0 auto;
+}

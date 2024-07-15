@@ -22,7 +22,7 @@ class ContactFormTest extends TestCase
     }
 
     // Include the file containing the submit_contact function
-    require_once 'C:Users/{Your path here}/IdeaProjects/StudentHub/submit_contact.php';
+    require_once 'C:Users/{Insert User path}/IdeaProjects/StudentHub/submit_contact.php';
   }
 
   protected function tearDown(): void
@@ -87,6 +87,7 @@ class ContactFormTest extends TestCase
 
     // Assert that the output contains the CSRF token error message
     $this->assertStringContainsString('Invalid CSRF token', $output);
+    echo $output;
   }
 }
 

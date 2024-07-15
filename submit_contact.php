@@ -1,52 +1,71 @@
 <?php
 session_start();
 
-// Database credentials
-$servername = "localhost";
-$username = "root";
-$password = "Hello100";
-$dbname = "StudentHubDB";
+function submit_contact($pdo) {
+  // Check if the form was submitted
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Temporarily bypass CSRF check for debugging
+     if (!isset($_POST['token']) || !isset($_SESSION['token'])) {
+         echo "Invalid CSRF token";
+         return;
+     }
 
-// Check if the form was submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+     $postToken = $_POST['token'];
+     $sessionToken = $_SESSION['token'];
 
-  // Check CSRF token
-  if (!isset($_POST['token']) || !hash_equals($_SESSION['token'], $_POST['token'])) {
-    die("Invalid CSRF token");
-  }
+     if (!hash_equals($sessionToken, $postToken)) {
+         echo "Invalid CSRF token";
+         return;
+     }
 
-  // Create a connection
-  $conn = new mysqli($servername, $username, $password, $dbname);
+    try {
+      // Prepare and bind
+      $stmt = $pdo->prepare("INSERT INTO contact_responses (first_name, last_name, email, subject) VALUES (:first_name, :last_name, :email, :subject)");
 
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . htmlspecialchars($conn->connect_error));
-  }
+      // Retrieve and validate input data
+      $first_name = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+      $last_name = filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+      $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+      $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
-  // Prepare and bind
-  $stmt = $conn->prepare("INSERT INTO contact_responses (first_name, last_name, email, subject) VALUES (?, ?, ?, ?)");
-  if ($stmt === false) {
-    die("Prepare failed: " . htmlspecialchars($conn->error));
-  }
-  $stmt->bind_param("ssss", $first_name, $last_name, $email, $subject);
+      // Bind parameters
+      $stmt->bindParam(':first_name', $first_name);
+      $stmt->bindParam(':last_name', $last_name);
+      $stmt->bindParam(':email', $email);
+      $stmt->bindParam(':subject', $subject);
 
-  // Retrieve and validate input data
-  $first_name = filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING);
-  $last_name = filter_input(INPUT_POST, 'lastname', FILTER_SANITIZE_STRING);
-  $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
-  $subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
-
-  // Execute the statement
-  if ($stmt->execute()) {
-    echo "Contact form submitted successfully!";
+      // Execute the statement
+      if ($stmt->execute()) {
+        echo json_encode(["message" => "Contact form submitted successfully!"]);
+      } else {
+        echo json_encode(["message" => "Error: " . htmlspecialchars($stmt->errorInfo()[2])]);
+      }
+    } catch (PDOException $e) {
+      echo json_encode(["message" => "Connection failed: " . htmlspecialchars($e->getMessage())]);
+    }
   } else {
-    echo "Error: " . htmlspecialchars($stmt->error);
+    echo json_encode(["message" => "Error: Form data not submitted."]);
   }
+}
 
-  // Close the statement and connection
-  $stmt->close();
-  $conn->close();
-} else {
-  echo "Error: Form data not submitted.";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Database credentials
+  $servername = "localhost";
+  $username = "root";
+  $password = "Hello100";
+  $dbname = "StudentHubDB";
+
+  try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // Set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    submit_contact($conn);
+
+    // Close the connection
+    $conn = null;
+  } catch (PDOException $e) {
+    echo json_encode(["message" => "Connection failed: " . htmlspecialchars($e->getMessage())]);
+  }
 }
 ?>

@@ -59,3 +59,39 @@ Our goal is to build a comprehensive online platform that provides Dublin studen
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+### Testing Set-up (Guide to Installation of thrid party software included)
+Testing Set-up
+
+PhpUnit:
+	1. Download composer from website and install
+	2. Configure a path for composer.
+		1)Open file explorer
+		2)Right click on this pc
+		3)Click advanced System settings on the right side of system settings
+		4)Click advanced in system properties and select environment variables 
+		5)Scroll down system variables until you see path (highlight path by clicking on it)
+		6)Click ‘Edit’
+		7)Click new and set the file path to PHP and composer/bin
+	3. Install via Composer with ‘composer require --dev phpunit/phpunit’
+	4. In bash (terminal) ‘Composer install’
+	5. Configure Php interpreter (Go to settings in your ide, then languages and frameworks and ensure that the path leads back to 	your install of php i.e. "C:\php8.3")
+	6. Ensure PHPUnit is configured in the project.
+
+To run the PHP unit tests edit run configurations, select test scope and set to directory before listing the path of the directory and selecting use alternative config file (set the file as the phpunit.xml file).
+Ensure the correct interpreter (PHP 8.3) is selected and run the tests. Be sure to configure the correct paths before running said tests(this includeds the path in the testing file).
+
+
+Node.js and Cypress:
+	1. Download node.js and cypress from website and install
+	2. Configure a path for node.js
+		1) Open file explorer
+		2) Right click on this pc
+		3) Click advanced System settings on the right side of system settings
+		4) Click advanced in system properties and select environment variables 
+		5) Scroll down system variables until you see path (highlight path by clicking on it)
+		6) Click ‘Edit’
+		7) Click new and set the file path to nodejs
+To run the server and cypress open the terminal after installing dependencies and start the server by typing ‘node server js’.
+Once the server is up and running open a new terminal (don’t close the previous terminal, else it will terminate the process) and type ‘npx cypress open’ from there select E2E for end to end testing and run your tests by selecting the file and clicking the play icon.
+

@@ -60,7 +60,7 @@ Our goal is to build a comprehensive online platform that provides Dublin studen
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Testing Set-up (Guide to Installation of thrid party software included)
+### Testing Set-up (Guide to Installation of third party software included)
 Testing Set-up
 
 PhpUnit:
